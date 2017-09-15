@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AsdrubalApp"
+             x:Class="AsdrubalApp.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Button x:Name="ConButton" Text="Conectar" VerticalOptions="FillAndExpand" StyleClass="Warning"/>
+        <Button x:Name="UButton" Text="U" VerticalOptions="FillAndExpand" KeyDown="UClick" KeyUp="UOut"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Button x:Name="LButton" Text="L" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" KeyDown="LClick" KeyUp="LOut"/>
+            <Button x:Name="RButton" Text="R" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" KeyDown="RClick" KeyUp="ROut"/>
+        </StackLayout>
+        <Button x:Name="DButton" Text="D" VerticalOptions="FillAndExpand" KeyDown="DClick" KeyUp="DOut"/>
+    </StackLayout>
+
+
+</ContentPage>
